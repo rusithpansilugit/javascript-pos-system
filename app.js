@@ -190,8 +190,8 @@ console.log(product);
 
 const productGrid = document.getElementById("product-grid");
 
-function showProducts() {
-  product.forEach((item) => {
+function showProducts(items) {
+  items.forEach((item) => {
     productGrid.innerHTML += `
       <div class="product-card">
         <span class="stock-badge">${item.stock}</span>
@@ -203,4 +203,4 @@ function showProducts() {
   });
 }
 
-showProducts();
+showProducts(product);
