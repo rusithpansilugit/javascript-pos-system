@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
- <title>POS System</title>
+  <title>POS System</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,10 +17,28 @@
         </div>
 
         <div class="user-name">
-            <h2>Welcome, Rusith Wijayanayake</h2>
+            <h2>Welcome, <span> Rusith Wijayanayake </span> </h2>
         </div>
     </header>
 
-    </div>
+    <main class="pos-container">
+      <div class="left-panel">
+        <section class="catalog-section">
+                <div class="catalog-buttons">
+                 <button class="active-btn">All Items</button>
+                 <button>🍽️ Food</button>
+                 <button>🥤 Drinks</button>
+                 <button>🍿 Snacks</button>
+                 <button>🥐 Bakery</button>
+                 <button>🥛 Dairy</button>
+                </div>
+        </section>
+
+        <section class="search-prod">
+            <input type="text" placeholder="Search Products.....">
+        </section>
+      </div>
+    </main>
+    
 </body>
 </html>
