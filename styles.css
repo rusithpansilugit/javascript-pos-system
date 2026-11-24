@@ -70,6 +70,7 @@ body {
   display: flex;
   padding: 10px;
   background: #333;
+  border-bottom: 2px solid rgb(238, 241, 243);
 }
 
 .search-prod input {
@@ -78,4 +79,13 @@ body {
   border: none;
   border-radius: 4px;
   font-size: 16px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  color: #fff;
+  background-color: #333;
 }
