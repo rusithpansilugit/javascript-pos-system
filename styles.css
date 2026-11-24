@@ -115,11 +115,18 @@ body {
 .product-card .prod-name {
   color: white;
   left: 50%;
-  transform: translateX(-25%);
+  transform: translateX(-20%);
+  font-family: "Outfit", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 12px 0 8px;
 }
 
 .product-card .prod-price {
   color: dodgerblue;
   left: 50%;
   transform: translateX(-30%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  margin: 0;
 }
