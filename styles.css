@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(8, 7, 13);
 }
 .top-bar {
   background-color: #333;
@@ -71,6 +71,7 @@ body {
   padding: 10px;
   background: #333;
   border-bottom: 2px solid rgb(238, 241, 243);
+  border: none;
 }
 
 .search-prod input {
@@ -79,6 +80,13 @@ body {
   border: none;
   border-radius: 4px;
   font-size: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.search-prod ::placeholder {
+  color: rgb(209, 200, 200);
 }
 
 .product-grid {
@@ -89,7 +97,7 @@ body {
 }
 
 .product-card {
-  background-color: #342e2e7a;
+  background-color: #201b4d7a;
   color: white;
   padding: 10px;
   border-radius: 8px;
@@ -127,6 +135,6 @@ body {
   left: 50%;
   transform: translateX(-30%);
   font-family: "Outfit", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
 }
