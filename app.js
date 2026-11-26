@@ -211,6 +211,9 @@ const dataCategoryButton = document.querySelectorAll(".catalog-buttons button");
 
 dataCategoryButton.forEach((button) => {
   button.addEventListener("click", () => {
-    button.forEach(())
+    dataCategoryButton.forEach((btn) => {
+      btn.classList.remove("active-btn");
+    });
+    button.classList.add("active-btn");
   });
 });
