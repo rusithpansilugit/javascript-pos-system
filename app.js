@@ -219,8 +219,6 @@ dataCategoryButton.forEach((button) => {
   });
 });
 
-// filter products by category
-
 // Filter products by category
 
 const filterButton = document.querySelectorAll(".catalog-buttons button");
@@ -239,6 +237,35 @@ filterButton.forEach((button) => {
         product[3],
         product[4],
         product[5],
+      ]);
+    } else if (category === "Drinks") {
+      showProducts([
+        product[6],
+        product[7],
+        product[8],
+        product[9],
+        product[10],
+        product[11],
+      ]);
+    } else if (category === "Snacks") {
+      showProducts([
+        product[12],
+        product[13],
+        product[14],
+        product[15],
+      ]);
+    }else if (category === "Bakery"){
+      showProducts([
+        product[16],
+        product[17],
+        product[18],
+        product[19],
+      ]);
+    }else{
+      showProducts([
+        product[20],
+        product[21],
+        product[22],
       ]);
     }
   });
