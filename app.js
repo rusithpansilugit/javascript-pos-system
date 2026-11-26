@@ -206,3 +206,11 @@ function showProducts(items) {
 }
 
 showProducts(product);
+
+const dataCategoryButton = document.querySelectorAll(".catalog-buttons button");
+
+dataCategoryButton.forEach((button) => {
+  button.addEventListener("click", () => {
+    button.forEach(())
+  });
+});
