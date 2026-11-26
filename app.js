@@ -248,25 +248,23 @@ filterButton.forEach((button) => {
         product[11],
       ]);
     } else if (category === "Snacks") {
-      showProducts([
-        product[12],
-        product[13],
-        product[14],
-        product[15],
-      ]);
-    }else if (category === "Bakery"){
-      showProducts([
-        product[16],
-        product[17],
-        product[18],
-        product[19],
-      ]);
-    }else{
-      showProducts([
-        product[20],
-        product[21],
-        product[22],
-      ]);
+      showProducts([product[12], product[13], product[14], product[15]]);
+    } else if (category === "Bakery") {
+      showProducts([product[16], product[17], product[18], product[19]]);
+    } else {
+      showProducts([product[20], product[21], product[22]]);
     }
   });
+});
+
+// search products
+
+const searchProduct = document.getElementById("search-prod");
+
+searchProduct.addEventListener("input", (e) => {
+  const searchByName = e.target.value.toLowerCase();
+  const filterProducts = product.filter((itemProd) => {
+    return itemProd.name.toLowerCase().includes(searchByName);
+  });
+  showProducts(filterProducts);
 });
