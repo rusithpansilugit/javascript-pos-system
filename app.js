@@ -191,6 +191,8 @@ console.log(product);
 const productGrid = document.getElementById("product-grid");
 
 function showProducts(items) {
+  productGrid.innerHTML = "";
+
   items.forEach((item) => {
     productGrid.innerHTML += `
       <div class="product-card">
