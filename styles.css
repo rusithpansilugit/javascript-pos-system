@@ -180,9 +180,50 @@ body {
   margin: 0 auto;
 }
 
-.shopping-cart p{
+.shopping-cart p {
   color: gray;
   text-align: center;
   font-family: "Outfit", sans-serif;
   font-size: 13px;
+}
+
+.charge-section button {
+  width: 43%;
+  height: 45px;
+  font-size: 17px;
+  color: white;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: start;
+}
+
+.charge-section button:hover {
+  background-color: rgb(4, 64, 125);
+  transition: background-color 0.4s ease;
+}
+
+.price-section {
+  background-color: #201b4d7a;
+  color: white;
+  padding: 15px;
+  width: 40%;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.price-row:last-child {
+  border-top: 1px solid white;
+  padding-top: 12px;
+  margin-bottom: 0;
+  font-weight: bold;
 }
