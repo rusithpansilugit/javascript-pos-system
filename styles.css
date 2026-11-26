@@ -138,3 +138,34 @@ body {
   font-weight: 500;
   margin: 0;
 }
+
+.cart-section {
+  background-color: #201b4d7a;
+  padding: 50px;
+  font-size: 10px;
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.cart-section h2 {
+  color: white;
+  font-family: "Outfit", sans-serif;
+}
+
+.cart-section h3 {
+  color: gray;
+  font-weight: bold;
+  text-align: right;
+  position: relative;
+  top: -28px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: "Outfit", sans-serif;
+}
+
+.cart-section h3:hover {
+  color: rgb(209, 193, 193);
+  transition: color 0.3s ease;
+}
