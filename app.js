@@ -207,6 +207,7 @@ function showProducts(items) {
 
 showProducts(product);
 
+// category button active state
 const dataCategoryButton = document.querySelectorAll(".catalog-buttons button");
 
 dataCategoryButton.forEach((button) => {
@@ -215,5 +216,30 @@ dataCategoryButton.forEach((button) => {
       btn.classList.remove("active-btn");
     });
     button.classList.add("active-btn");
+  });
+});
+
+// filter products by category
+
+// Filter products by category
+
+const filterButton = document.querySelectorAll(".catalog-buttons button");
+
+filterButton.forEach((button) => {
+  button.addEventListener("click", () => {
+    const category = button.dataset.category;
+
+    if (category === "All Items") {
+      showProducts(product);
+    } else if (category === "Food") {
+      showProducts([
+        product[0],
+        product[1],
+        product[2],
+        product[3],
+        product[4],
+        product[5],
+      ]);
+    }
   });
 });
