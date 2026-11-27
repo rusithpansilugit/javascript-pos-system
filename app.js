@@ -190,12 +190,20 @@ console.log(product);
 
 const productGrid = document.getElementById("product-grid");
 
+// here added a array to store products
+let cart = [];
+
+// add product function
+const addToCart = (id) => {
+  console.log(id);
+};
+
 function showProducts(items) {
   productGrid.innerHTML = "";
 
   items.forEach((item) => {
     productGrid.innerHTML += `
-      <div class="product-card">
+      <div class="product-card" onclick="addToCart(${item.id})">
         <span class="stock-badge">${item.stock}</span>
         <div class="prod-icon">${item.icon}</div>
         <p class="prod-name">${item.name}</p>
