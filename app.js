@@ -196,6 +196,9 @@ let cart = [];
 // add product function
 const addToCart = (id) => {
   console.log(id);
+  cart.push(id);
+
+  console.log("Added" + "  " + cart);
 };
 
 function showProducts(items) {
