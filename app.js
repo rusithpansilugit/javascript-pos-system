@@ -197,8 +197,11 @@ let cart = [];
 const addToCart = (id) => {
   console.log(id);
   cart.push(id);
-
   console.log("Added" + "  " + cart);
+
+  cart.forEach((item) => {
+    console.log(item + " " + "added to the cart");
+  });
 };
 
 function showProducts(items) {
